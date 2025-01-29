@@ -1,0 +1,67 @@
+## **0.1.0** (2025-01-29)
+
+### **Features**
+- Updated `README.md` and added `env.example` file.  
+- Improved code quality and CSS adjustments for Windows users and browsers.  
+- Added `template3` and standardized all templates to A4 width.  
+- Updated profile API with dynamic profile loading.  
+- Implemented data validation in education and work experience forms.  
+- Styled the download button for completed resumes.  
+- Added an About page and redesigned the landing page.  
+- Introduced **My Resume** page with view, delete, and download functionality.  
+- Added an information box for unauthorized access.  
+- Updated preview to reflect cached data after page refresh.  
+- Implemented login, logout, signup, and password encryption using bcrypt.  
+- Integrated OAuth2.0 authentication via Google.  
+- Implemented signup and signin forms.  
+- Tuned AI prompt using Cohere's tuner and improved extraction function.  
+- Added dynamic headshot display and adjustments for `template1`.  
+- Integrated AI text generation for the skill and work experience sections.  
+- Implemented a context-generation AI API powered by Cohere.  
+- Replaced periodic cache updates with input-delay-based cache updates.  
+- Implemented **resume preview features** for:
+  - Language section (WIP).  
+  - Social media links.  
+  - Skills and summary pages.  
+  - Heading section (Fixed missing `template_id` in URL).  
+- Fixed incorrect field in user profession.  
+- Enabled resume download as PDF with completion tracking.  
+- Completed Jinja integration for `template1`.  
+- Added additional sections: Language and Social Media links in the finalization page.  
+- Added new **summary** field in the Resume table and renamed the Work Experience **summary** field to **achievement**.  
+- Implemented **caching mechanisms** for:  
+  - Work experience, education, and template selection.  
+  - Skill-section page.  
+- Refactored HTML to remove duplicate code.  
+- Implemented resume creation API (WIP).  
+- Set up OpenAI API with Docker for self-hosting.  
+- **Initial project setup and model definitions.**  
+
+### **Fixes**
+- Removed debug print logs.  
+- Allowed more image file types.  
+- Fixed markdown typo in `README.md`.  
+- Fixed issues with:
+  - Heading info caching, additional info data passing, and `template3` styling.  
+  - Cache cleanup after finalizing resumes.  
+  - Template theme not updating on first load.  
+  - Profile image caching.  
+  - Template prompt improvements and retry mechanism for text generation.  
+  - Jinja syntax errors caused by document formatting.  
+  - Cache updates after deletion (now based on cache length).  
+  - Overwriting cache data in preview updates and increased polling interval.  
+  - Resume template grid layout and selection highlights (WIP).  
+  - Navigation state management in the progress bar.  
+  - Profile image rendering and cache validation.  
+  - Backend profile file path handling.  
+  - Social media and language tables with auto-generated IDs and foreign keys.  
+  - Resume API data retrieval errors (`start_date`).  
+  - Resume and template model relationships.  
+  - Address model separated from Resume for better geographical data extraction.  
+  - Proficiency level display adjustments.  
+  - Hidden remove button when only one cached entry exists.  
+  - Fixed logic issue in the first education entry form.  
+  - JavaScript import syntax errors.  
+  - Removed `myenv` folder from the repository.  
+
+---
